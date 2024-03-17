@@ -23,7 +23,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>High-Level Steps</h2>
 
 - Create a resource group along with two virtual machines
-- Observed TCMP, SSH, DHCP, DNS, and RDP traffic 
+- Observed TCMP, SSH, DHCP, and RDP traffic 
 
 
 <h2>Actions and Observations</h2>
@@ -63,3 +63,8 @@ Step 5. In Wireshark, I used a filter udp.port == 53 to show DNS (Domain Name Sy
 
 <p></p>
 <img width="1327" alt="Screenshot 2024-03-17 at 3 03 48 AM" src="https://github.com/Zakari23/azure-network-protocols/assets/158666482/4d9c9104-de23-44b2-aa4e-366585b85ddf">
+<p>
+Step 6 Finally, I used a filter in Wireshark to show RDP (Remote Desktop Protocol) traffic, focusing on the TCP port number (tcp.port==3389). RDP is the protocol for connecting to other computers remotely, giving full control over the Graphical User Interface (GUI). During the observation, there was a steady flow of RDP traffic.
+
+</p>
+<img width="1163" alt="Screenshot 2024-03-17 at 2 42 02 AM" src="https://github.com/Zakari23/azure-network-protocols/assets/158666482/22fd6f65-dbe8-4ab8-a5e1-1704fee55ab2">

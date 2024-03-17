@@ -53,6 +53,13 @@ Step 3. After I installed Wireshark on my Windows 10 virtual machine (VM1), I op
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 4. After that, I used Wireshark to only show SSH (Secure Shell) traffic. At the same time, I went to the PowerShell terminal and started an SSH connection to VM2. While connected, I ran commands, which made SSH packets show up in Wireshark. When I finished, I typed "exit" to end the SSH session.
+<p></p>
+<img width="1154" alt="Screenshot 2024-03-17 at 2 02 42 AM" src="https://github.com/Zakari23/azure-network-protocols/assets/158666482/0fbbb5da-8833-429d-a24b-28c0ed052916">
+
 </p>
 <br />
+Step 5. In Wireshark, I used a filter udp.port == 53 to show DNS (Domain Name System) traffic. Then, I ran the "nslookup" command for www.google.com This command asks our DNS server for the IP addresses linked to "google.com" domain names.
+
+<p></p>
+<img width="1327" alt="Screenshot 2024-03-17 at 3 03 48 AM" src="https://github.com/Zakari23/azure-network-protocols/assets/158666482/4d9c9104-de23-44b2-aa4e-366585b85ddf">
